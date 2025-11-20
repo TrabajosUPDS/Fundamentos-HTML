@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head> <!--contenedor de metadatos-->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="DEscripcion de la pagina"> <!--descripcion del contenido de la pagina-->
+
+    <meta name="keywords" content="HTML, CSS, JavaScript"> <!--palabras clave para motores de busqueda-->
+
+    <meta name="author" content="Tu Nombre"> <!--autor del documento-->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--compatibilidad con navegadores antiguos-->
+
+    <link rel="stylesheet" href="styles.css"> <!--enlace a hoja de estilos externa-->
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!--icono de la pagina-->
+
+    <script src="script.js" defer></script> <!--enlace a archivo de JavaScript-->
+
+    <title>Titulo de la Pagina</title>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div><!--contenedor  generic de bloque-->
+
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="logo de la empresa" width="100" height="50"> <!--imagen con atributos de ancho y alto-->
+
+            <h1>Bienvenido a Mi Pagina Web</h1> <!--encabezado--> 
+
+        </div>
+
+        <nav>
+
+            <ul> <!--lista desordenada-->
+
+                <li><a href="#home">Inicio</a></li> <!--elemento de lista con enlace-->
+
+                <li><a href="#about">Acerca de</a></li>
+
+                <li><a href="#services">Servicios</a></li>
+
+                <li><a href="#contact">Contacto</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main> <!--Contenido principal de la pagina-->
+
+        <section id="Inicio"> <!--Agrupa contenido segun la tematica-->
+
+            <h2>Bienvenidos</h2> 
+
+            <p>Este es un <strong>parrafo</strong> con <em>Diferentes</em> etiquetas de <mark>Formato</mark>.</p>
+
+            <!-- <strong> da importancia fuerte (negrita) -->
+
+            <!-- <em> da énfasis (cursiva) -->
+
+            <!-- <mark> resalta texto -->
+
+            <p>texto con <small>Letra Pequeña</small> y <sup>superindice</sup> o  <sub>sobindice</sub>.</p>
+
+            <!-- <small> texto pequeño -->
+
+            <!-- <sup> superindice -->
+
+            <!-- <sub> subindices -->
+
+            <blockquote cite="https://www.bing.com/search?pglt=929&q=articulo+IA&cvid=2ea41c3a5af7441abdf47230499314e4&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOTIGCAEQABhAMgYIAhAAGEAyBggDEAAYQDIGCAQQABhAMgYIBRAAGEAyBggGEAAYQDIGCAcQABhAMgYICBAAGEDSAQgyNDAyajBqMagCCLACAQ&FORM=ANNTA1&PC=ACTS"> <!--cita en bloque con atributo de fuente-->
+
+                <p>"La vida es lo que sucede mientras estás ocupado haciendo otros planes."</p>
+
+            </blockquote>
+
+            <p> Puedes visitar <a href="https://ejemplo.com" target="_blank" rel="noopener">Este enlace externo</a>.</p>
+
+        </section>
+        <section id="acerca">
+            <h2>Sobre nosotros</h2>
+            <article>
+                <h3>Nuestra historia</h3>
+                <p>Fundados en <time datetime="2020-01-15">1 de enero del 2020</time></p>
+                <p>Direccion: <address>Calle final olañeta, Sucre, Bolivia</address></p>
+                <details>
+                    <summary>Mas informacion</summary>
+                    <p>Somos una empresa dedicada a brindar soluciones tecnologicas innovadoras</p>
+                </details>
+            </article>
+            <aside>
+                <h4>Noticias recientes</h4>
+                <p>Lanzamientro de nuestro nuevo producto el <time datetime="2024-07-01">1 de julio de 2024</time></p>
+            </aside>
+        </section>
+        <section id="servicios">
+            <h2>Nuestros servicios</h2>
+            <div>
+                <ol> <!--Listas ordenadas (Ennumeradas)-->
+                    <li>Desarrollo Web</li>
+                    <li>Diseño grafico</li>
+                    <li>marketing digital</li>
+                </ol>
+            </div>
+            <div>
+                <dl>
+                    <dt>HTML</dt>
+                    <dd>Lenguaje de marcado de hipertexto</dd>
+                    <dt>CSS</dt>
+                    <dd>Hojas de estulo cascada</dd>
+                    <dt>JavaScript</dt>
+                    <dd>Lenguaje de programacion</dd>
+                </dl>
+            </div>
+            <table border="1">
+                <caption>
+                    Precio de servicios
+                </caption>
+                <thead> <!--encabezado de la tabla-->
+                    <tr> <!--Fila-->
+                        <th>Servicio</th> <!--Celda de encabezado-->
+                        <th>Precio</th>
+                        <th>Duracion</th>
+                    </tr>
+                </thead>
+                <tbody> <!--Cuerpo de la tabla-->
+                    <tr>
+                        <td>Desarrollo Web</td>
+                        <td>200 bs</td>
+                        <td>1 mes</td>
+                    </tr>
+                    <tr>
+                        <td>diseño grafico</td>
+                        <td>500</td>
+                        <td>1 semana</td>
+                    </tr>
+                    <tr>
+                        <td>marketing digital</td>
+                        <td>900</td>
+                        <td>2 semanas</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Contactanos para mas detalles</td>
+                    </tr>
+            </table>
+        </section>
+        <section id="Multimedia">
+            <h2>Galeria multimedia</h2>
+            <figure>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUQU43KDevgY7ZUJ6oTgYFNjfIizRK0M0dNA&s" alt="Descripcion de la imagen" loading="lacy">
+                <figcaption>Imagen de ejemplo con carga diferida</figcaption>
+            </figure>
+            <figure>
+                <video width="640" height="360" controls>
+                    <source src="supersexiboys - recontraremix ( sentimiento).mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta del video.
+                </video>
+                <figcaption>Video demostrativo</figcaption>
+            </figure>
+            <figure>
+                <audio controls>
+                    <source src="" type="">
+                    Tu navegador no soporta la etiqueta de audio.
+                </audio>
+                <figcaption>Audio de ejemplo</figcaption>
+            </figure>
+            <iframe src="https://youtu.be/XxyFZCSFHJ0?si=7lYaceVOAIPVGCti" width="360" height="315" title="SUPERSEXYBOYS" allowfullscreen></iframe>
+        </section>
+        <section id="contacto">
+            <h2>Contactanos</h2>
+            <form action="/enviar" method="POST"><!--Crea formulario-->
+                <fieldset> <!--agruparcampos relacionados-->
+                    <legend>Datos personales</legend>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <br>
+                    <label for="email">Correo electronico</label>
+                    <input type="email" id="email" name="email" placeholder="tu@gmail.com" required>
+                    <br>
+                    <label for="telefono">telefono</label>
+                    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{0}">
+                    <br>
+                    <label for="edad">edad</label>
+                    <input type="number" id="edad" name="edad" min="18" max="100">
+                    <br>
+                    <label for="fecha">fecha</label>
+                    <input type="date" id="fecha" name="fecha">
+                    <br>
+                    <label for="color">Color</label>
+                    <input type="color" id="color" name="color">
+                    <br>
+                    <label for="rango">rango (1-10)</label>
+                    <input type="range" id="rango" name="rango" min="1" max="10">
+                    <br>
+                    <input type="submit" value="enviar">
+                </fieldset>
+                <fieldset>
+                    <legend>Preferencias</legend>
+                    <label for="pais">Pais</label>
+                    <select name="pais" id="pais"> <!--lista desplegable-->
+                        <option value="">Selecciona un pais</option>
+                        <option value="Bolivia">Bolivia</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Peru">Peru</option>
+                    </select>
+                    <br>
+                    <p>Genero</p>
+                    <input type="radio" id="masculino" name="genero" value="m">
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="femenino" name="genero" value="f">
+                    <label for="femenino">Femenino</label>
+                    <input type="radio" id="otro" name="genero" value="o">
+                    <label for="otro">Otro</label>
+                    <br>
+                    <p>Intereses: </p>
+                    <input type="checkbox" id="tecnologia" name="intereses" value="tecnologia"> <!--casilla de verificacion-->
+                    <label for="tecnologia">Tecnologia</label>
+                    <input type="checkbox" id="deportes" name="intereses" value="deportes"> 
+                    <label for="deportes">Deportes</label>
+                    <input type="checkbox" id="musica" name="intereses" value="musica"> 
+                    <label for="musica">Musica</label>
+                    <br>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" rows="5" cols="50" placeholder="Escribe tu mensaje aqui..."></textarea>
+                    <br>
+                    <!--carga de archivos-->
+                    <label for="archivo"></label>
+                    <input type="file" id="archivo" name="archivo" accept=".pdf, .doc, .docx, .jpg, .png"> <!--Selector de arhivo-->
+                    <br>
+                </fieldset>
+                    <input type="submit" value="enviar"> <!--boton de envio-->
+                    <button type="reset">Limpiar</button> <!--otro forma de poner un boton-->
+                    <input type="button" value="Boton personalizado" onclick="alert('BOTON PERSONALIZADO CLICKEANDO')">
+            </form> 
+        </section>
+        <section>
+            <h2>otros elementos</h2>
+            <p>ejemplo de linea horizontal</p>
+            <hr> <!--linea horizontal divisoria-->
+            <!--fragmentos de codigo-->
+            <p>codigo en linea: <code> <console class="log">("hola");</code></p>
+            <p>bloque de codigo</p>
+            <pre> <!--texto preformateado (respeta espacios)-->
+                <code>
+                    function saludar() {
+                        console.log("Hola mundo");
+                    }
+                </code>
+            </pre>
+            <p>texto <del>tachado</del> y <ins>interesado</ins>.</p>
+            <!--<del> texto tachado-->
+            <!--<ins> texto insertado-->
+            <p>Abreviatura: <abbr title="hyperText makup Lenguage">HTML</abbr></p> <!--abreviatura con titulo-->
+            <p>Variables matematicas <var>x</var> + <var>y</var> = <var>Z</var></p> <!--Variables o terminos-->
+            <p>Entrada de teclado: Presiona <kbd>Ctrl</kbd> + <kbd>c</kbd></p> <!--entrada por teclado-->
+            <p>Salida de programa: <samp>Error 404: pagina no encontrada</samp></p> <!--salida de programa-->
+            <meter value="7" min="0" max="10"></meter> <!--indicador de valor dentro de un rango o escalar-->
+            <progress value="70" max="100">70%</progress> <!--Barra de progreso-->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Todos los derechos reservados</p>
+        <p>
+            <a href="https://facebook.com" aria-label="Visitar facebook">Facebook</a>
+            <a href="https://twiter.com" aria-label="Visitar twiter">Twiter></a>
+            <a href="https://instagram.com" aria-label="Visitar instagram">Instagram></a>
+        </p>
+    </footer>
+</body>
+</html>
