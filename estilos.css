@@ -1,0 +1,65 @@
+/*Selectores basicos*/
+p{color:rgb(109, 47, 47);} /* Aplica el color azul a todo el texto dentro de las etiquetas <p>*/
+    .titulo {font-size: 24px;} /*aplica el tamaño de fuente de 24px a los elementos con la clase "titulo"*/
+    #principal {background: rgb(175, 220, 237);} /* Aplica un fondo gris claro al elemento con el id "principal"*/
+    div p {color: red;} /*aplica el color a los parrafos <p> dentro de las equitas <div>*/
+/*Propiedades visuales del documento*/
+body {
+    color: #333; /*Color de texto principal*/
+    background-color: #f9f9f9; /*Color de fondo del cuerpo del documento*/
+    font-family: arial, sans-serif; /*Fuente principal del codumento*/
+    font-size: 16px; /*Tamaño de la fuente (letra)*/
+    text-align: center; /*Alineacion del texto al centro (por defecto)*/
+}
+/*Caja y bordes*/
+.caja{
+    width: 200px; /*Ancho de la caja*/
+    height: 100px; /*Alto de la caja*/
+    margin: 10px auto; /* margen superior e inferios de 10px y centrado horizontal*/
+    padding: 15px; /*rellena interno de 15px*/
+    border: 2px solid #000; /*Borde con 2px de grosor, color negro y estilo solido*/
+    border-radius: 10px; /*bordes redondeados 10px*/
+    box-shadow: 2px 2px 5px gray; /*sombra debajo de la caja para efectos de profundidad*/
+}
+/*Posicionamiento y distribucion*/
+.elementos{
+    display: flex; /*activa el flexbox(permite centrar y distribuir elementos facilmente)*/
+    justify-content: center;/*centra el contenido horizontalmente dentro del elemento*/
+    align-items: center; /*centrar el contenido verticalmente dentro del elemento*/
+    position: relative; /*permitir ajustar la posicion usando top, left...*/
+    top: 10px; /*desplazar el elemento 10px hacia abajo desde su posicion actual*/
+    left: 20px; /*desplazar hacia la derecha 20px*/
+    z-index: 1;/*define la propiedad de apilamiento (mas alto = mas adelante)*/
+    background: lightcoral; /*fondo de color*/
+    width: 200px; /*ancho del elemento*/
+    height: 100px; /*alto del elemento*/
+    color: white; /*color de texto dentro del elemento*/
+    border-radius: 10px; /*bordes redondeados*/ 
+}
+ /*trnasformaciones o trancisiones*/
+ .elementos:hover {
+    transform: scale(1.1) rotate(5deg); /*agranda el elemento un 10% cuando se para el cursor sobre el*/
+    transition: transform 0.3s ease; /*suaviza la trancision del efecto de agrandamiento en 0.3 segundos*/
+    background-color: #333; /*hace que cambie de bolor*/
+}
+@keyframes mover {
+    from {transform: translateX(0);} /*inicio de la anicacion en la posicion original*/
+    to{transform: translateX(100px);} /*final de la animacion desplazada 100pc a la derecha*/
+}
+.animar{
+    animation:mover 2s infinite alternate; /*aplica la animacion "mover" con una duracion de 2 segundos. que se repite*/
+}
+/*diseño responsivo*/
+@media(max-width:600px){
+    body {
+        background-color: aliceblue; /*cambie el color de fondo a azul claro en pantallas con un ancho maximo de 600px*/
+        font-size: 14px; /*reduce el tamaño de fuente a 14px en pantallas pequeñas*/
+    }
+}
+/*con grid*/
+.grid {
+    display: grid; /*activa el sistema de cuadricula*/
+    grid-template-columns: 1fr 1fr 1fr; /*define tres columnas de igual tamaño*/
+    gap: 10px; /*espacio de 10px entre las filas y columnas*/
+    margin-top: 30px; /*margen superior de 30px*/
+}
